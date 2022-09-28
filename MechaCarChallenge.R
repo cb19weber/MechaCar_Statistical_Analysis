@@ -13,7 +13,7 @@ lm(mpg ~ vehicle_length, vehicle_mpg)
 
 # store model and built ggplot
 mpg_model <- lm(mpg ~ vehicle_length, vehicle_mpg)
-yvals <- mpg_model$coefficients['mpg']*vehicle_mpg$mpg + mpg_model$coefficients['(Intercept']
+yvals <- mpg_model$coefficients['vehicle_length']*vehicle_mpg$vehicle_length + mpg_model$coefficients['(Intercept)']
 plt <- ggplot(vehicle_mpg,aes(x=vehicle_length,y=mpg))
 plt + geom_point() + geom_line(aes(y=yvals), color = 'red')
 
