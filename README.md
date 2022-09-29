@@ -15,8 +15,10 @@ The specific purpose of the challenge is the ascertain production issues for the
 </div>
 Does this model predict mpg of MechaCar prototypes efeectively? Why or why not?
 
-### Analysis of Outcomes Based on Challenges and Goals
-
+### Analysis of Production and Manufacturing Consistencies
+<div>
+  <p></p>
+</div>
 
 ### Challenges and Difficulties Encountered
 
