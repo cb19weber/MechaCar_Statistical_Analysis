@@ -27,3 +27,7 @@ total_summary <- production_df %>% summarize(Mean=mean(PSI),Median=median(PSI),V
 
 # 4. Create a summary dataframe to analyze production variances, grouping by manufacturing lot
 lot_summary <- production_df %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep')
+
+# Bonus. Create visualizations to display manufacturing outliers
+plt <- ggplot(production_df,aes(x=Manufacturing_Lot, y=PSI))
+plt + geom_boxplot(aes(colour = Manufacturing_Lot), outlier.color = "red") + theme(axis.text.x = element_text(hjust=1))
