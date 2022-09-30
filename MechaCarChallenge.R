@@ -45,3 +45,4 @@ t.test(lot_two$PSI,production_df$PSI)
 t.test(lot_three$PSI,production_df$PSI)
 
 # Deliverable 4: Study Comparing the MechaCar to the Competition
+# see README
