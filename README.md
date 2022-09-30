@@ -26,8 +26,9 @@ Does this model predict mpg of MechaCar prototypes efeectively? Why or why not?
 ## T-Tests on Suspension Coils
 <div>
   <p>In performing a statistical analysis of the whole population in the manufacturing record, the expected mean based on a normal significance level suggests that we cannot reject our null hypothesis.
-  <img src="https://github.com/cb19weber/MechaCar_Statistical_Analysis/blob/main/images/total_summary.png" align="right">
-  Our p-value, as displayed in the figure on the right, is 1, which is much higher than our significance level of 0.05</p>
+  <img src="https://github.com/cb19weber/MechaCar_Statistical_Analysis/blob/main/images/one_sample_t.png" align="right">
+  Our p-value, as displayed in the figure on the right, is 1, which is much higher than our significance level of 0.05, thus the manufacturing variance of the whole population may very well be explained by random chance and normal variations in materials.</p>
+  <p>This would seem to align with what has been documented above, that taken as a whole, the total variance is within standard acceptance levels with few outliers. In examination of the first lot PSI levels, the mean PSI measured against the whole population resulted a p-level of 0.06613. <img src="https://github.com/cb19weber/MechaCar_Statistical_Analysis/blob/main/images/two_sample_t.png" align="left">Lot two t.test results with a p-level of 0.06026. Lot three is again the outlier of the manufacturing lots, with a t.test resulting p-level of 0.1818.</p>
 </div>
 
 ## Results
