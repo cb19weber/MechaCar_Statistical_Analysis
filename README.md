@@ -18,6 +18,8 @@ Does this model predict mpg of MechaCar prototypes efeectively? Why or why not?
 ### Analysis of Production and Manufacturing Consistencies
 <div>
   <p>The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. <img src="https://github.com/cb19weber/MechaCar_Statistical_Analysis/blob/main/images/total_summary.png" align="left">The variance of the total summary as shown on the left is just over 62.29 PSI. This indicates acceptable manufacturing consistency in the coils on the whole.</p>
+  <p><img src="https://github.com/cb19weber/MechaCar_Statistical_Analysis/blob/main/images/lot_box_plot.png" align="center"></p>
+  <p>Looking deeper into the manufacturing variances and understanding what is happening in each manufacturing lot (or batch) we can see above and to the right that while the overall variance is well within standards of production KPIs, the first two production lots demonstrated significantly greater quality in terms of low variance. The third lot actually falls outside the range of standardized production measures. <img src="https://github.com/cb19weber/MechaCar_Statistical_Analysis/blob/main/images/total_summary.png" align="right">
 </div>
 
 ### Challenges and Difficulties Encountered
