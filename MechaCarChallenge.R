@@ -31,3 +31,17 @@ lot_summary <- production_df %>% group_by(Manufacturing_Lot) %>% summarize(Mean=
 # Bonus. Create visualizations to display manufacturing outliers
 plt <- ggplot(production_df,aes(x=Manufacturing_Lot, y=PSI))
 plt + geom_boxplot(aes(colour = Manufacturing_Lot), outlier.color = "red") + theme(axis.text.x = element_text(hjust=1))
+
+# Deliverable 3: T-Tests on Suspension Coils
+# 1. Determine if the PSI across all manufacturing lots is statiscitally different from the population mean
+t.test(production_df$PSI,mu=mean(production_df$PSI))
+
+# 2. Determine if the PSI for each lot is statistically different from the population mean
+lot_one <- production_df[production_df$Manufacturing_Lot == 'Lot1',]
+lot_two <- production_df[production_df$Manufacturing_Lot == 'Lot2',]
+lot_three <- production_df[production_df$Manufacturing_Lot == 'Lot3',]
+t.test(lot_one$PSI,production_df$PSI)
+t.test(lot_two$PSI,production_df$PSI)
+t.test(lot_three$PSI,production_df$PSI)
+
+# Deliverable 4: Study Comparing the MechaCar to the Competition
